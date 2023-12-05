@@ -2,7 +2,7 @@ app_name = "yaam"
 app_title = "Yet Another Agriculture Module"
 app_publisher = "Rémi de Chazelles"
 app_description = "Todo"
-app_email = "remi@chazelles.de"
+app_email = "remidechazelles@gmail.com"
 app_license = "agpl-3.0"
 # required_apps = []
 
@@ -11,7 +11,9 @@ app_license = "agpl-3.0"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/yaam/css/yaam.css"
+# app_include_css = "custom.bundle.css"
 # app_include_js = "/assets/yaam/js/yaam.js"
+app_include_js = "custom.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/yaam/css/yaam.css"

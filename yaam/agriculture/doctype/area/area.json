@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-20 13:38:59.591788",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dtpi",
+  "label",
+  "abbr",
+  "column_break_lhck",
+  "parent_area",
+  "is_group",
+  "section_break_vvlc",
+  "geojson",
+  "section_break_ghif",
+  "lft",
+  "rgt",
+  "old_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dtpi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Area"
+  },
+  {
+   "fieldname": "parent_area",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Node",
+   "options": "Area"
+  },
+  {
+   "fieldname": "geojson",
+   "fieldtype": "Geolocation",
+   "label": "G\u00e9om\u00e9trie"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "label": "Abbreviation"
+  },
+  {
+   "fieldname": "column_break_lhck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vvlc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ghif",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-11-21 09:31:12.229867",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Area",
+ "nsm_parent_field": "parent_area",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "abbr",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}
